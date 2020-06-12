@@ -1,0 +1,7 @@
+.idea/
+.docker/db
+.docker/nginx/server.pem
+.docker/nginx/server-key.pem
+mkcert
+example.com+4-key.pem
+example.com+4.pem
