@@ -1,0 +1,8 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^2.3",
+        "vkcom/vk-php-sdk": "^5.101",
+        "ext-json": "*",
+        "ext-curl": "*"
+    }
+}
