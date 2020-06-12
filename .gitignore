@@ -2,6 +2,8 @@
 .docker/db
 .docker/nginx/server.pem
 .docker/nginx/server-key.pem
+vendor
+.env
 mkcert
 example.com+4-key.pem
 example.com+4.pem

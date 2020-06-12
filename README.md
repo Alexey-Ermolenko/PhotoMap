@@ -9,31 +9,32 @@
 
 Install Certutil
 
-- <b>sudo apt install libnss3-tools -y</b>
+- `sudo apt install libnss3-tools -y`
 
 Install mkcert
 
-- <b>wget https://github.com/FiloSottile/mkcert/releases/download/v1.1.2/mkcert-v1.1.2-linux-amd64
-- <b>mv mkcert-v1.1.2-linux-amd64 mkcert</b>
-- <b>chmod +x mkcert</b>
-- <b>sudo cp mkcert /usr/local/bin/</b>
+- `wget https://github.com/FiloSottile/mkcert/releases/download/v1.1.2/mkcert-v1.1.2-linux-amd64`
+- `mv mkcert-v1.1.2-linux-amd64 mkcert`
+- `chmod +x mkcert`
+- `sudo cp mkcert /usr/local/bin/`
 
 Generate Local CA
 
-- <b>mkcert -install</b>
+- `mkcert -install`
 
 Generate Local SSL Certificates
 
-- <b>sudo mkcert example.com '\*.example.com' localhost 127.0.0.1 ::1</b>
+- `sudo mkcert example.com '\*.example.com' localhost 127.0.0.1 ::1`
 
-Copy the certificate <b>example.com+4.pem</b> and key <b>example.com+4-key.pem</b> into folder <b>.docker/nginx</b> of your project.
+Copy the certificate `example.com+4.pem` and key `example.com+4-key.pem` into folder `.docker/nginx` of your project.
 
-Rename these files to <b>server.pem</b> and <b>server-key.pem</b> and give the permission 644.
+Rename these files to `server.pem` and `server-key.pem` and give the permission `644`.
 
-- <b>sudo chmod 644 server.pem</b>
-- <b>sudo chmod 644 server-key.pem</b>
+- `sudo chmod 644 server.pem`
+- `sudo chmod 644 server-key.pem`
 
-<br>
-Run docker-composer up -d --build
+#### 2. Make .env file `cp .env.example .env`  and configure
 
-Open in your browser https://localhost/
+#### 3. Run `docker-composer up -d --build`
+
+#### 4. You can open application in your browser `https://localhost/`
